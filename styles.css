@@ -39,6 +39,10 @@ h1, h2 {
   text-align: center;
 }
 
+img {
+  display: block;
+}
+
 .__nav-bar {
   display: flex;
   justify-content: center;
@@ -92,9 +96,55 @@ h1, h2 {
 
 .__projects > h2 {
   max-width: 840px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid var(--main-gray);
   padding-bottom: 2rem;
   color: #504e4e;
   border-bottom: 0.2rem solid var(--main-gray);
+}
+
+.__projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto 3rem auto;
+}
+
+.__project {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.__project-image {
+  height: calc(100% - 3rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.__project-title {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.__btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.__btn-show-all {
+  font-size: 1rem;
+  background: #7a0000;
+  transition: background 0.3s ease-out;
+}
+
+.__btn-show-all:hover {
+  background: red;
+}
+
+.__btn-show-all i {
+  font-size: 0.5rem;
 }
