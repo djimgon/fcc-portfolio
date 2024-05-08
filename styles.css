@@ -1,7 +1,8 @@
 :root {
   --main-white: #f0f0f0;
-  --main-black: #232424;
+  --main-black: #323232;
   --main-blue: #0079ff;
+  --main-gray: #787878;
 }
 
 * {
@@ -22,6 +23,16 @@ a {
 
 ul {
   list-style: none;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h1, h2 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: bolder;
+  text-align: center;
 }
 
 .__nav-bar {
@@ -45,4 +56,26 @@ ul {
 .__nav-list a:hover {
   background: var(--main-blue);
   color: var(--main-white);
+}
+
+.__welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f1f1f1;
+  background-image: linear-gradient(62deg, #f1f1f1 0%, #919191 100%);
+}
+
+.__welcome h1 {
+  color: var(--main-black);
+}
+
+.__welcome > p {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: var(--main-gray);
 }
