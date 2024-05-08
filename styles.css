@@ -19,6 +19,7 @@ body {
 a {
   color: var(--main-white);
   text-decoration: none;
+  transition: background 0.3s ease-out;
 }
 
 ul {
@@ -62,7 +63,7 @@ img {
 }
 
 .__nav-list a:hover {
-  background: var(--main-blue);
+  background: var(--main-gray);
   color: var(--main-white);
 }
 
@@ -178,6 +179,10 @@ img {
   font-size: 2.4rem;
   text-shadow: 2px 2px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
+}
+
+.__contact-links a:hover {
+  color: var(--main-gray);
 }
 
 .__contact p {
