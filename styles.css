@@ -202,3 +202,9 @@ footer > p {
   margin: 0.5rem auto;
   color: var(--main-gray);
 }
+
+@media only screen and (max-width: 815px) {
+  .__contact-links {
+    flex-direction: column;
+  }
+}
