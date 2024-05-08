@@ -179,3 +179,17 @@ img {
   text-shadow: 2px 2px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
 }
+
+footer {
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: var(--main-black);
+  border-top: 4px solid var(--main-white);
+}
+
+footer > p {
+  margin: 0.5rem auto;
+  color: var(--main-gray);
+}
