@@ -29,6 +29,10 @@ h1 {
   font-size: 6rem;
 }
 
+h2 {
+  font-size: 3.2rem;
+}
+
 h1, h2 {
   font-family: 'Exo 2', sans-serif;
   font-weight: bolder;
@@ -78,4 +82,19 @@ h1, h2 {
   font-weight: 200;
   font-style: italic;
   color: var(--main-gray);
+}
+
+.__projects {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--main-white);
+}
+
+.__projects > h2 {
+  max-width: 840px;
+  margin: 0 auto 0 auto;
+  border-bottom: 0.2rem solid var(--main-gray);
+  padding-bottom: 2rem;
+  color: #504e4e;
+  border-bottom: 0.2rem solid var(--main-gray);
 }
